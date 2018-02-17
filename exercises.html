@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div class="sidenav">
+		<a href="home.html">Home</a>
+		<a href="goal.html">My goal & Hobbies</a>
+		<a href="exercises.html">Exercises</a>
+	</div>
+
+	<h1>how web browsers and web servers works together. </h1>
+	<p> The World Wide Web has a client/server architecture. This means that a client program running on your computer (your Web browser) requests information from a server program running on another computer somewhere on the Internet. That server then sends the requested data back over the Net to your browser program, which interprets and displays the data on your screen.</p>
+
+	<h1> How a Web Browser Work. </h1>
+	<p>Web browsers consist of client software that runs on your computer and displays home pages on the Web. There are clients for a wide variety of devices, including Windows, Macintosh, and Unix computers</p>
+
+	<h1> How Web Servers Work. </h1>
+	<p>Whenever you view a web page on the internet, you are requesting that page from a web server. When you type a URL into your browser (for example, http://www.quackit.com/html/tutorial/index.cfm), your browser requests the page from the web server and the web server sends the page back:</p>
+
+	<picture>
+  			<source media="(min-width: 650px)" srcset="https://www.quackit.com/pix/web_servers/tutorial/how_web_servers_work_1.gif">
+  			<source media="(min-width: 465px)" srcset="https://www.quackit.com/pix/web_servers/tutorial/how_web_servers_work_1.gif">
+  			<img src="https://www.quackit.com/pix/web_servers/tutorial/how_web_servers_work_1.gif" alt="Webserverwork" style="width:auto;">
+	</picture>
+
+<h2>1. Browser Resolves the Domain Name to an IP Address</h2>
+
+<p>Your web browser first needs to know which IP address the domain name www.quackit.com resolves to. If it doesn't already have this information stored in it's cache, it requests the information from one or more DNS servers (via the internet).
+The DNS server tells the browser which IP address the domain name resolves to (and therefore, where the website is located).
+Note that the IP address was assigned when the website was first created on the web server.</p>
+
+<h2> 2.Browser Requests the Full URL</h2>
+
+<p> Now that the web browser knows which IP address the website is located at, it can request the full URL from the web server.</p>
+
+<h2> 3.Web Server sends the Requested Page</h2>
+
+<p>The web server responds by sending back the requested page.
+If the page doesn't exist (or another error occurs), it will send back the appropriate error message.</p>
+
+<h2>4.Your web browser receives the page and renders it as required.</h2>
+<p>When referring to web browsers and web servers in this manner, we usually refer to them as a client (web browser) and a server (web server).</p>
+
+<h2>Multiple Websites</h2>
+
+<p>A web server can (and usually does) contain more than one website. In fact, many hosting companies host hundreds, or even thousands of websites on a single web server.</p>
+
+<p>Each website is usually assigned a unique IP address which distinguishes it from other websites on the same machine. This IP address is also what the DNS server uses to resolve the domain name.</p>
+
+<p>It is also possible to configure multiple websites without using different IP addresses using host headers and/or different ports. This can be useful in a development environment and is quite easy to do.</p>
+
+<h2>Page Not Found</h2>
+
+<p>If the requested page isn't found, the web server sends the appropriate error code/message back to the client.<p>
+
+<p>You can create user friendly error messages, then configure your web server to display that page instead of the usual error page. This can add a nice touch to your website. How many times have you (or even worse, your visitors) encountered a plain white page with some cryptic error message on it?</p>
+
+<p>It's very easy to create custom error pages, then configure your web server to use them.</p>
+
+<h2>Default Documents</h2>
+
+<p>If you've ever created a website, you may have found that if you have an "index" file (index.html for example), you don't need to specify the name of the file. For example, the following URLs both load the same page:</p>
+
+http://www.quackit.com/html/tutorial
+http://www.quackit.com/html/tutorial/index.cfm
+
+<p>In this example, index.cfm is the default document. You can configure your web server so that any file name can be the default document.</p>
+
+<p>For example, you could configure your web server to use index.cfm in the event no filename has been specified, or if you use PHP, index.php. You can even specify different default documents for different directories if you like.</p>
+
+<h2>SSL Certificates</h2>
+
+<p>You can apply SSL certificates against a website via the web server. First you need to generate the certificate either by yourself (i.e. using a certificate generator), or by a Certificate Authority (CA). Then, once it has been generated, you apply it to your website via your web server. Applying an SSL certificate to a website is a straight forward task.</p>
+
+<p>Once you've applied an SSL certificate against a website, you can navigate it using HTTPS (as opposed to HTTP). HTTPS encrypts any data that is transferred over the internet. This reduces the possibility of some malicious person being able to read your users' sensitive information.</p>
+
+<p>To navigate a website using HTTPS, you simply replace the HTTP with HTTPS at the start of the URL in your browsers' location bar ("https://www.quackit.com")</p>
+</body>
+</html>

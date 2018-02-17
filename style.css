@@ -1,0 +1,103 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+header {
+	background: url(images/header.jpg) no-repeat center;
+	height: 100%;
+	margin: 0;
+
+}
+body { 
+	background: url(images/body.jpg) ;
+	height: 100%;
+	width: 100%;
+	margin-left: 200px;
+	}
+
+p { 
+	font-family: minecraftFont;
+	font-size: 30px;
+	margin-top: 0; 
+	text-align: justify;
+	color: #404040;
+	}
+
+h1 {
+	font-family: minecraftFont;
+	font-size: 50px;
+	margin-top: 0; 
+	text-align: justify;
+	color: #3d3d5c;
+	}
+
+h2 {
+	font-family: minecraftFont;
+	font-size: 30px;
+	margin-top: 0; 
+	text-align: justify;
+	color: #3d3d5c;
+	}
+
+h3 { 
+	font: minecraftFont;
+	font-size: 10px;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #7D775C;
+	}
+@font-face {
+    font-family: minecraftFont;
+	src: url(font/minecrafter/Minecrafter.Reg.ttf);
+	}	
+
+/* specific divs */
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: red;
+    background: #eff;
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.srcset media {
+	height: 100%;
+    width: 200px;
+    position: center;
+}
+
+
+
